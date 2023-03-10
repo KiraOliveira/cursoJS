@@ -175,3 +175,200 @@ let corPerfil = corPersonalizada || corPadrao
 console.log(corPerfil) // Como a condição é Truthy e a corPersonalizada já possui um dado preenchido ele retorna apenas esse
 
 //Pesquisar mais sobre ambos
+
+//****************************************** */
+
+// IF .. ELSE
+
+//Se a hora estiver entre 06:00 até 12:00 : Bom dia!
+
+//Se a hora estiver entre 12:01 até 18:00 : Boa tarde!
+
+//Caso contrário : Boa noite!
+
+//Declarando as variáveis que serão usadas
+
+let hora = 14
+
+if (hora > 6 && hora < 12) {
+  console.log('Bom dia!!')
+} else if (hora > 12 && hora < 18) {
+  console.log('Boa tarde!!')
+} else {
+  console.log('Boa noite!!')
+}
+
+//**************************************** */
+
+//Switch .. Case
+
+let permissao // comum, gerente, diretor
+permissao = 'gerente'
+
+switch (permissao) {
+  case 'comum':
+    console.log('Usuários comum')
+    break
+
+  case 'gerente':
+    console.log('Usuário gerente')
+    break
+
+  case 'diretor':
+    console.log('Usuário diretor')
+    break
+
+  default:
+    console.log('Usuário não reconhecido')
+}
+
+//******************************************* */
+
+//LAÇOS DE REPETIÇÃO
+
+//FOR
+
+for (let i = 0; i < 5; i++) {
+  console.log('Estou aprendendo JS! Usando FOR', i)
+}
+
+for (let i = 1; i <= 5; i++) {
+  if (i % 2 !== 0) {
+    // modulo - resto da divisão igual a 0
+    console.log('Imprimir apenas os impares - Laço For', i)
+  }
+}
+
+for (let i = 1; i <= 9; i++) {
+  if (i % 2 === 0) {
+    console.log('Imprimir apenas os pares - Laço For', i)
+  }
+}
+
+for (let i = 7; i >= 1; i--) {
+  if (i % 2 !== 0) {
+    console.log('Imprimir decrescente - Laço For', i)
+  }
+}
+
+for (let m = 1; m <= 12; m++) {
+  if (m % 2 === 0) {
+    console.log('Imprimir crescente - Laço For', m)
+  }
+}
+
+//************************************************ */
+
+//WHILE -- VERIFICA PRIMEIRO DEPOIS EXECUTA O LOOP
+
+let i = 5
+
+while (i >= 1) {
+  if (i % 2 !== 0) {
+    console.log('Imprimir apenas os impares - Laço While', i)
+  }
+  i--
+}
+
+let j = 1
+while (j <= 9) {
+  if (j % 2 === 0) {
+    console.log('Imprimir apenas os pares - Laço While', j)
+  }
+  j++
+}
+
+let d = 7
+while (d >= 1) {
+  if (d % 2 !== 0) {
+    console.log('Imprimir decrescente - Laço While', d)
+  }
+  d--
+}
+
+let l = 1
+while (l <= 12) {
+  if (l % 2 === 0) {
+    console.log('imprimir crescente - Laço While', l)
+  }
+  l++
+}
+
+//********************************************* */
+
+//DO .. WHILE -- EXECUTA NO MINÍMO UMA VEZ E DEPOIS VERIFICA A CONDIÇÃO - USADO POUCO
+
+//DECLARANDO AS VARIÁVEIS
+
+let e = 0
+do {
+  console.log('Digitando! - Laço Do While', e)
+  e++
+} while (e < 10)
+
+let f = 1
+do {
+  if (f % 2 !== 0) {
+    console.log('Imprimir apenas os impares - Laço Do While', f)
+  }
+  f++
+} while (f <= 7)
+
+let g = 1
+do {
+  if (g % 2 === 0) {
+    console.log('Imprimir apenas os pares - Laço Do While', g)
+  }
+  g++
+} while (g <= 9)
+
+let h = 7
+do {
+  if (h % 2 !== 0) {
+    console.log('Imprimir decrescente - Laço Do While', h)
+  }
+  h--
+} while (h >= 1)
+
+let k = 1
+do {
+  if (k % 2 === 0) {
+    console.log('Imprimir crescente - Laço Do While', k)
+  }
+  k++
+} while (k <= 12)
+
+//*********************************** */
+
+// FOR .. IN
+const pessoa = {
+  nome: 'Kira',
+  idade: 34
+}
+
+//chave = key
+//key - value
+//nome(key) - 'kira'(value)
+
+for (let chave in pessoa) console.log('Laço FOR IN', chave, pessoa)
+
+const cores = ['Vermelho', 'Azul', 'Verde']
+for (let indice in cores) console.log('Laço FOR IN', indice, cores[indice])
+
+//***************************************************************************** */
+
+//FOR .. OF
+
+for (let cor of cores) console.log('Laço FOR OF', cor)
+
+const dias = [
+  'Segunda',
+  'Terça',
+  'Quarta',
+  'Quinta',
+  'Sexta',
+  'Sábado',
+  'Domingo'
+]
+
+for (let dia of dias) console.log('Laço FOR OF', dia)
