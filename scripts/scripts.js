@@ -78,18 +78,18 @@ console.log(salario - salario)
 
 // ++INCREMENTO
 
-let idade = 18
-console.log(idade++) // Dessa forma o incremento é feito apenas
-console.log(idade) // Aqui
+let idadeOther = 18
+console.log(idadeOther++) // Dessa forma o incremento é feito apenas
+console.log(idadeOther) // Aqui
 
-console.log(++idade) // Aqui ele faz o incremento no mesmo momento
+console.log(++idadeOther) // Aqui ele faz o incremento no mesmo momento
 
 // --DECREMENTO
 
-console.log(idade--) // Dessa forma o decremento é feito apenas
-console.log(idade) // Aqui
+console.log(idadeOther--) // Dessa forma o decremento é feito apenas
+console.log(idadeOther) // Aqui
 
-console.log(--idade) // Aqui ele faz o decremento no mesmo momento
+console.log(--idadeOther) // Aqui ele faz o decremento no mesmo momento
 
 //************************************************************************ */
 
@@ -341,9 +341,9 @@ do {
 //*********************************** */
 
 // FOR .. IN
-const pessoa = {
+/*const pessoa = {
   nome: 'Kira',
-  idade: 34
+  idadeAtual: 34
 }
 
 //chave = key
@@ -353,13 +353,13 @@ const pessoa = {
 for (let chave in pessoa) console.log('Laço FOR IN', chave, pessoa)
 
 const cores = ['Vermelho', 'Azul', 'Verde']
-for (let indice in cores) console.log('Laço FOR IN', indice, cores[indice])
+for (let indice in cores) console.log('Laço FOR IN', indice, cores[indice])*/
 
 //***************************************************************************** */
 
 //FOR .. OF
 
-for (let cor of cores) console.log('Laço FOR OF', cor)
+/*for (let cor of cores) console.log('Laço FOR OF', cor)
 
 const dias = [
   'Segunda',
@@ -371,4 +371,4 @@ const dias = [
   'Domingo'
 ]
 
-for (let dia of dias) console.log('Laço FOR OF', dia)
+for (let dia of dias) console.log('Laço FOR OF', dia)*/
