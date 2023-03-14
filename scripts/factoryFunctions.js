@@ -1,7 +1,7 @@
 // FACTORY FUNCTIONS - (FUNÇÕES DE FÁBRICA)
 // Encapsular a informção em um método para criar um objeto
 
-const celular = {
+const celular3 = {
   marcaCelular: 'ASUS',
   tamanhoTela: {
     vertical: 155,
@@ -16,7 +16,7 @@ const celular = {
 // Primeira forma de fazer inserindo o objeto dentro de uma função
 
 function criarCelular() {
-  const celular = {
+  const celular4 = {
     marcaCelular: 'ASUS',
     tamanhoTela: {
       vertical: 155,
@@ -27,7 +27,7 @@ function criarCelular() {
       console.log('Fazendo ligação...')
     }
   }
-  return celular
+  return celular4
 }
 
 // Segunda forma de fazer colocando o return direto no objeto

@@ -1,7 +1,7 @@
 // CONSTRUCTOR FUNCTIONS - CONSTRUTORES DE FÁBRICA
 
 // camelCase - umDoisTresQuatro
-/*function criarCelular(marcaCelular, tamanhoTela, capacidadeBateria) {
+function criarCelular(marcaCelular, tamanhoTela, capacidadeBateria) {
   return {
     marcaCelular,
     tamanhoTela,
@@ -10,9 +10,7 @@
       console.log('Fazendo ligação...')
     }
   }
-}*/
-
-// NÃO ESTÁ FUNCIONANDO, VERIFICAR O QUE ACONTECEU
+}
 
 // Pascal Case - UmDoisTresQuatro
 function Celular(marcaCelular, tamanhoTela, capacidadeBateria) {
@@ -26,5 +24,5 @@ function Celular(marcaCelular, tamanhoTela, capacidadeBateria) {
 
 //Criando o objeto - estanciando o objeto
 
-const celular = new Celular('ASUS', 5.5, 5000)
+const celular = new Celular('ASUS', 6.5, 5200)
 console.log(celular)
