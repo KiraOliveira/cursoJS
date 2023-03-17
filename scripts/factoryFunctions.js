@@ -30,7 +30,7 @@ function criarCelular() {
   return celular4
 }
 
-// Segunda forma de fazer colocando o return direto no objeto
+// Segunda forma de fazer colocando o return direto no objeto - Aqui retorna o objeto novo
 
 function criarCelular() {
   return {

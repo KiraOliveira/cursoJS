@@ -22,7 +22,7 @@ function Celular(marcaCelular, tamanhoTela, capacidadeBateria) {
     })
 }
 
-//Criando o objeto - estanciando o objeto
+//Criando o objeto - estanciando o objeto - Aqui cria o objeto novo
 
 const celular = new Celular('ASUS', 6.5, 5200)
 console.log(celular)
